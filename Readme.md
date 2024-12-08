@@ -1,17 +1,17 @@
-Here's an updated **README.md** that incorporates the dependencies, features, and key tools used in your app:
-
----
-
 # React-native-reels-layout-App 🎥
 
-**react-native-reels-layout** is a cutting-edge React Native application built with Expo, focusing on delivering a seamless, feature-rich experience. This app incorporates modern tools, libraries, and UI/UX patterns to provide a highly interactive and efficient reel-based user experience.
+**react-native-reels-layout** is a React Native application built with Expo, focusing on delivering a seamless, feature-rich experience. This app incorporates modern tools, libraries, and UI/UX patterns to provide a highly interactive and efficient reel-based user experience.
 
 ---
 
+## 📱 Demo
+
 ### iOS
-[Watch iOS Demo](example/ios_rn_reels.mov)
+[Watch iOS Demo](https://drive.google.com/file/d/1mk6o6ceG3BYWOkQ4dvJmyAIsuvMFy7kb/view?usp=sharing)
+
+
 ### Android
-[Watch Android Demo](example/android_rn_reels.mov)
+[Watch Android Demo](https://drive.google.com/file/d/12hhXa_cGlUUftBHlkxdO5o56qjhaOh18/view?usp=sharing)
 
 
 ## 🛠️ Features
@@ -20,7 +20,6 @@ Here's an updated **README.md** that incorporates the dependencies, features, an
 - **Interactive UI**: Features action buttons for like, comment, share, and follow actions.
 - **Optimized Data Fetching**: Powered by `@tanstack/react-query` and `react-query-kit` for server state management.
 - **Reusable Icon Components**: Icons powered by `lucide-react-native` for flexible and lightweight design.
-- **Global State Management**: Utilize `react-native-mmkv` for fast and efficient key-value storage.
 - **Cross-Platform Ready**: Designed to work seamlessly across Android, iOS, and the web.
 
 ---
@@ -42,12 +41,6 @@ Here's an updated **README.md** that incorporates the dependencies, features, an
 - **@tanstack/react-query**: Handles server state and caching effectively.
 - **react-query-kit**: Enhances React Query with a type-safe and modular API abstraction.
 - **axios**: Simplifies HTTP requests, with retry support using `axios-retry`.
-
-### Utilities
-- **react-native-mmkv**: Efficient storage for persisting data securely.
-- **expo-linking**: Deep linking support for seamless navigation.
-- **expo-system-ui**: Enhances system-level UI features.
-- **expo-web-browser**: Opens web pages within the app context.
 
 ---
 
@@ -76,7 +69,7 @@ src/
 ### Installation
 1. Clone the repository:
    ```bash  
-   git clone https://github.com/ajitpatel29/react-native-reels-layout.git  
+   git clone https://github.com/ajitpatel28/react-native-reels-layout.git
    cd react-native-reels-layout  
    ```  
 2. Install dependencies:
@@ -96,11 +89,5 @@ src/
       ```bash  
       npm run web  
       ```  
-
----
-
-## 📄 License
-
-This project is licensed under the **0BSD License**.
 
 ---
