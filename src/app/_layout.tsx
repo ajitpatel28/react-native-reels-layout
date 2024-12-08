@@ -7,6 +7,9 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/components/useColorScheme';
+import {APIProvider} from "@/api/common/ApiProvider";
+import {GestureHandlerRootView} from "react-native-gesture-handler";
+import {StatusBar} from "expo-status-bar";
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -23,7 +26,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require('../../assets/fonts/SpaceMono-Regular.ttf'),
     ...FontAwesome.font,
   });
 
@@ -50,10 +53,14 @@ function RootLayoutNav() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+      <GestureHandlerRootView>
+      <APIProvider>
+          <StatusBar translucent={false}/>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
       </Stack>
+      </APIProvider>
+      </GestureHandlerRootView>
     </ThemeProvider>
   );
 }
