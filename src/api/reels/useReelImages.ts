@@ -3,7 +3,7 @@ import { AxiosError } from 'axios';
 import { client } from '../common/client';
 import { ReelImage } from './types';
 
-export const fetchImages = async (page = 1, limit = 20) => {
+export const fetchImages = async (page = 1, limit = 10) => {
     const response = await client.get(`/v2/list?page=${page}&limit=${limit}`);
     return response.data;
 };
@@ -19,7 +19,7 @@ export const useReelImages = createInfiniteQuery<Response, Variables, AxiosError
         variables: Variables,
         { pageParam = 1 }: { pageParam: number }
     ) => {
-        const response = await fetchImages(pageParam, variables?.limit || 20);
+        const response = await fetchImages(pageParam, variables?.limit || 10);
         return response;
     },
     getNextPageParam: ( allPages) => {

@@ -1,5 +1,5 @@
 import React, {memo} from 'react';
-import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Dimensions } from 'react-native';
 const { width } = Dimensions.get("window");
 import {ReelImage} from "@/api/reels/types";
 import {ImageBackground} from "expo-image";
